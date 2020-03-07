@@ -20,6 +20,14 @@ A Serverless starter that adds ES7 syntax, serverless-offline, linting, environm
 
 ---
 
+### Notes
+I need to export a couple of variables to get Serverless to run with my account
+where I need to assume a role
+```
+export AWS_SDK_LOAD_CONFIG=1
+export AWS_PROFILE=sandbox
+```
+
 ### Demo
 
 A demo version of this service is hosted on AWS - [`https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello`](https://z6pv80ao4l.execute-api.us-east-1.amazonaws.com/dev/hello)
@@ -131,12 +139,3 @@ custom:
 ```
 
 To [override the default config](https://eslint.org/docs/user-guide/configuring), add a `.eslintrc.json` file. To ignore ESLint for specific files, add it to a `.eslintignore` file.
-
-### Support
-
-- Open a [new issue](https://github.com/AnomalyInnovations/serverless-nodejs-starter/issues/new) if you've found a bug or have some suggestions.
-- Or submit a pull request!
-
----
-
-This repo is maintained by [Anomaly Innovations](https://anoma.ly); makers of [Seed](https://seed.run) and [Serverless Stack](https://serverless-stack.com).
